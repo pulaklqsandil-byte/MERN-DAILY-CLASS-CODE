@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Service Request Form</title>
+</head>
+<body>
+
+    <h1>Service Request Form</h1>
+
+    <form>
+
+        
+        Customer Name:
+        <input type="text" name="customer_name" required><br><br>
+
+       
+        Contact Number:
+        <input type="tel" name="contact" required><br><br>
+
+        
+        Issue Type:<br>
+        <select name="issue">
+            <option value="">--Select Issue--</option>
+            <option value="Laptop Repair">Laptop Repair</option>
+            <option value="Internet Issue">Internet Issue</option>
+            <option value="Software Problem">Software Problem</option>
+            <option value="Hardware Problem">Hardware Problem</option>
+        </select>
+        <br><br>
+
+        
+        Description:
+        <textarea name="description" rows="4" cols="30"></textarea>
+        <br><br>
+
+        
+        Priority:
+        <input type="radio" name="priority" value="Low"> Low
+        <input type="radio" name="priority" value="Medium"> Medium
+        <input type="radio" name="priority" value="High"> High
+        <br><br>
+
+       
+        <input type="submit" value="Submit Request">
+
+    </form>
+
+</body>
+</html>

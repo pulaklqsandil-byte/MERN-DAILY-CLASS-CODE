@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: olive;
+        }
+        .form-box {
+            width: 400px;
+            margin: auto;
+            background :yellow;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        h2 {
+            color: orange;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+        }
+        button {
+            background-color:black;
+            color:palegreen;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-box">
+    <h2 font family ="">Survey Form</h2>
+
+    <form>
+
+        
+        <label>User Name</label>
+        <input type="text" required>
+
+        
+        <label>Feedback</label>
+        <textarea rows="4"></textarea>
+
+        
+        <label>Rating (1-5)</label><br>
+        <input type="radio" name="rating"> 1
+        <input type="radio" name="rating"> 2
+        <input type="radio" name="rating"> 3
+        <input type="radio" name="rating"> 4
+        <input type="radio" name="rating"> 5
+        <br><br>
+
+       
+        <label>Favorite Technology</label>
+        <select>
+            <option>AI</option>
+            <option>Web Development</option>
+            <option>Data Science</option>
+            <option>Cyber Security</option>
+        </select>
+
+        
+        <input type="checkbox"> Subscribe to newsletter
+        <br><br>
+
+        
+        <button type="submit">Submit</button>
+
+    </form>
+</div>
+
+</body>
+</html>
