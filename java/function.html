@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let userDetails = function(userName,password){
+            
+             console.log(" this is functional Expression");
+             return userName+""+password
+            
+        }
+        let result=userDetails('ravi@123',"admin@123");
+        console.log('ravi@123',"admin@123");
+        console.log(userDetails("ramu","ramu@123"));
+        console.log(result);
+
+
+
+        //normal function
+        function employeeDetails(name,role,salary,address){
+            //console.log("this is the normal function");
+            //console.log("Name:",name);
+            //console.log("Roles:",role);
+            //console.log("Salary:",salary);
+            //console.log("Address:",address);
+            return [name,role,salary,address]
+        }
+
+        let emp1=employeeDetails("sandy","developer","234566","kerala")
+        console.log(emp1);
+
+
+        //imediate invoking function function
+        (function(){
+            let apiKey= "jhedgb"
+            console.log("this is invoking");
+            return apiKey;
+        })
+
+        ()
+        let a = 10;
+
+        //arrow function
+        let arrowfun =()=>console.log("arrow function");
+        arrowfun();
+        arrowfun();
+        arrowfun();
+
+      let test=  () =>{
+            let a =10
+            let b =30
+            console.log("name:",name,"skill:skills");
+        }
+         test(["node js","express js","mongodb"])
+
+         //nested function
+
+        // function outerFun(){
+
+          //  function innerFun(){
+            //    console.log("inner function");
+            //}
+            //console.log("outer function");
+            //innerFun()
+         //}
+         //outerFun()
+
+
+
+          //function outerFun(){
+
+            
+            //    console.log("outer function");
+              //  return function innerFun(){
+            //console.log[a,b];
+            //console.log("inner function");
+            
+              //  }
+         //}
+         //console.log(outerFun());
+
+
+         function outerFun(count){
+
+            
+            console.log("outer function");
+                return function innerFun(){
+            return count++;
+            
+                }
+         }
+         let result1 = outerFun(1)
+         console.log(result1());
+         console.log(result1());
+         console.log(result1());
+         console.log(result1());
+
+
+
+
+         function homepage(){
+            console.log("homepage");
+
+         }
+        function loginpage() {
+                        console.log("loginpage");
+            
+        }
+        function regpage() {
+                        console.log("regpage");
+            
+        }
+
+        homepage(regpage(),loginpage())
+        function display(fun1,fun2){
+
+        }
+        display(()=>{
+            console.log("first callback function");
+
+        }, () => {
+            console.log("second callback function");
+        })
+
+        //generator function
+
+        function*generator(){
+            yield 10;
+            yield 50;
+            yield 60;
+            console.log("this is the generator function");
+        }
+        let nextGen=generator();
+        console.log(nextGen.next().value);
+        console.log(nextGen.next().value);
+        console.log(nextGen.next().value);
+
+
+
+    </script>
+</body>
+</html>

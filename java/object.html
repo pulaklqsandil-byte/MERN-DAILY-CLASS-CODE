@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj={
+            name:"raju",
+            rollnumber:'hgfhcf',
+            skills:['html','css','js'],
+            address:{
+                city:"vizahg",
+                zipcode:546334
+            }
+        }
+        console.log(obj);
+        const obj1 =new Object({
+            username: "admin",
+            password:"admin@123"
+        }
+        )
+    console.log(obj);
+    console.log(obj.name);
+    console.log(obj.address.city);
+    console.log(obj.skills[0]);
+
+    console.log(Object.keys(obj));
+    console.log(Object.values(obj));
+    console.log(Object.entries(obj));
+
+    obj.name="sandy";
+    obj.course='b.tech'
+    delete obj.address;
+    console.log(obj);
+
+    Object.seal(obj)
+    console.log(Object.isFrozen())
+    obj.rollnumber="hjuygb"
+    obj.age=25;//n
+    console.log(obj);
+    
+
+    </script>
+</body>
+</html>
